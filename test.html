@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample Mobile Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<!-- http://demos.jquerymobile.com/1.4.3/button-markup/ -->
+<div data-role="page" id='home-page' >
+
+<div data-role="panel" id="home-navpanel" data-display="reveal" style='background-color:#CBE6FF;' >
+
+<ul data-role="listview">
+<li style='background-color:#ffffdc;font-weight:bold;'>
+<a data-role='button' class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" href='#home-page'>Home Page</a></li>
+<li><a href="#second-page">Second Page</a></li>
+</ul>
+</div>
+
+<div data-role="header" style='position:relative;height:60px;padding-left:40px;' >
+<a href="#home-navpanel" style='height:60px;width:60px;position:relative important!;left:0 !important;top: 0 !important;float:left;' class="ui-btn ui-shadow ui-icon-bars ui-btn-icon-notext" ></a>
+<table><tr><td><img align=left width=50 height=60 src='/images/1ptrans.gif'></td><td align=center valign=top><b>Welcome to<br>My Mobile Site</b></td></tr></table>
+</div>
+
+<div role="main" class="ui-content">
+    this is the middle
+    <a href="#second-page">Second Page</a>
+</div>
+
+<div data-role="footer" style='font-size:8pt;text-align:center;'>
+&copy;2014
+</div>
+
+</div>
+
+
+<div data-role="page" id='second-page' >
+
+<div data-role="panel" id="second-page-navpanel" data-display="reveal" style='background-color:#CBE6FF;' >
+
+<ul data-role="listview">
+<li style='background-color:#ffffdc;font-weight:bold;'>
+<a data-role='button' class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" href='/#home-page'>Home Page</a></li>
+<li><a href="#second-page">Second Page</a></li>
+</ul>
+</div>
+
+<div data-role="header" style='position:relative;height:60px;padding-left:40px;' >
+<a href="#second-page-navpanel" style='height:60px;width:60px;position:relative important!;left:0 !important;top: 0 !important;float:left;' class="ui-btn ui-shadow ui-icon-bars ui-btn-icon-notext" ></a>
+<table><tr><td><img align=left width=50 height=60 src='/images/1ptrans.gif'></td><td align=center valign=top><b>Welcome to<br>The Second Page</b></td></tr></table>
+</div>
+
+<div role="main" class="ui-content">
+    this is the middle
+</div>
+
+<div data-role="footer" style='font-size:8pt;text-align:center;'>
+&copy;2014
+</div>
+
+</div>
+
+
+</body>
+</html>
